@@ -213,7 +213,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		cmdList_->OMSetRenderTargets(1, &rtvH , false, nullptr);
 
 		//画面クリア
-		float clearColor[] = {1.0f,1.0f,0.0f,1.0f};//黄色
+		float clearColor[] = {0.5f,1.0f,0.0f,0.0f};//黄色
 		cmdList_->ClearRenderTargetView(rtvH, clearColor, 0, nullptr);
 
 		BarrierDesc.Transition.StateBefore = D3D12_RESOURCE_STATE_RENDER_TARGET;
